@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.read_book">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Ready"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Read_book"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".detail_createbook_screeen"
+            android:exported="false" />
+        <activity
+            android:name=".create_chapter_screen"
+            android:exported="false" />
+        <activity
+            android:name=".detail_createbook"
+            android:exported="false" />
+        <activity
+            android:name=".create_book"
+            android:exported="false" />
+        <activity
+            android:name=".update_information_user_screen"
+            android:exported="false" />
+        <activity
+            android:name=".choose_chapter_screen"
+            android:exported="false" />
+        <activity
+            android:name=".mybook_screen"
+            android:exported="false" />
+        <activity
+            android:name=".book_for_category_screen"
+            android:exported="false" />
+        <activity
+            android:name=".read_book_chapter_screen"
+            android:exported="false" />
+        <activity
+            android:name=".detail_book_screen"
+            android:exported="false" />
+        <activity
+            android:name=".home_screen"
+            android:exported="false"
+            android:label="@string/title_activity_home_screen" />
+        <activity
+            android:name=".signup_screen"
+            android:exported="false" />
+        <activity
+            android:name=".login_screen"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

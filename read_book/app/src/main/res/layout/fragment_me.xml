@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="70dp"
+    android:layout_marginTop="55dp"
+    tools:context=".ui.find.FindFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#d5b596"
+                android:orientation="vertical">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_avatar_me"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="24dp"
+                    android:src="@drawable/de"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/txt_name_me"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lê Nguyễn Văn Cường"
+                            android:layout_gravity="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="22dp"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@"
+                            android:textSize="18dp"
+                            android:layout_marginRight="5dp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/txt_email_me"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="cuonglevant"
+                            android:textSize="18dp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:background="#e4dfd9"
+                android:paddingEnd="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mô tả"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/txt_description_me"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginEnd="17dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Tin buồn của Phán khiến nỗi háo hức “lật tẩy” Phong Khê của ba cô gái hơi chùng xuống. Nhưng không vì vậy mà cuộc gặp gỡ ở nhà hát Hòa Bình bị đình lại. Đúng bảy giờ tối thứ bảy, Xuyến, Thục và Cúc Hương đã chễm chệ ngồi trong một quán chè trước cổng nhà hát. "
+                        android:textSize="15dp"
+                        android:textColor="#5b6770"
+                        android:layout_marginRight="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_mybook_me"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sách của tôi"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:id="@+id/btn_mybook_me"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="7dp"
+                        android:background="@drawable/next"
+                        android:clickable="true" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="17dp"
+                    android:id="@+id/recycleview_book_me"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

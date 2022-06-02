@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/layout_detail_book"
+    tools:context=".detail_book_screen">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="240dp"
+                    android:layout_gravity="center"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    app:cardCornerRadius="8dp">
+
+                    <ImageView
+                        android:id="@+id/img_book_book"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/book1" />
+<!--                    tools:srcCompat="@drawable/book1"-->
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_name_book"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bồ câu không đưa thư"
+                        android:layout_gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp"
+                        android:textStyle="bold"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@"
+                            android:textSize="18dp"
+                            android:layout_marginRight="5dp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/txt_author_book"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="nqnphuong"
+                            android:textSize="18dp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="10dp"
+                android:paddingEnd="10dp"
+
+                android:background="#e4dfd9"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mô tả"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/txt_description_detailbook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginEnd="17dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Ba người bạn thân là Xuyến, Thục, Cúc Hương. Đến một ngày Thục nhận được một lá thư làm quen trong ngăn bàn của mình,  điều này đã khiến cả ba tò mò và họ bị lôi cuốn vào trò chơi  giấu mặt. Cuối cùng họ còn kéo theo cả Phán củi, anh chàng xấu xí và vụng về làm quân sư giúp đỡ. Họ bắt đầu cuộc truy tìm người viết bức thư đó và đã có rất nhiều tình huống dở khóc dở cười xảy ra. Rồi điều bất ngờ cuối cùng bị phát hiện quá muộn. Vì sao? Mời độc giả tự khám phá và cảm nhận câu chuyện nhé."
+                        android:textSize="15dp"
+                        android:textColor="#5b6770"
+                        android:layout_marginRight="5dp"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layout_choose_chapter_detailbook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chương"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="7dp"
+                        android:background="@drawable/next" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bình luận"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="7dp"
+                        android:background="@drawable/next" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_readbook_detailbook"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/button_1"
+                        android:text="ĐỌC SÁCH"
+                        android:textColor="#fff"
+                        android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/btn_addbook_detailbook"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/add"
+                        android:text="+"
+                        android:textColor="#fff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
