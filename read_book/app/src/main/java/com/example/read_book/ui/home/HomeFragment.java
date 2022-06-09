@@ -57,7 +57,6 @@ public class HomeFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-
         //Random data
         getListBook();
 
@@ -91,7 +90,7 @@ public class HomeFragment extends Fragment {
                                     int end = index+10;
                                     int i = index;
                                     for (Book bo: mbook){
-                                        Book item = new Book(bo.getId_book(),R.drawable.book1,bo.getBookName(),bo.getBookAuthor(),bo.getBookDescription(), 0);
+                                        Book item = new Book(bo.getId_book(),bo.getBookImage(),bo.getBookName(),bo.getBookAuthor(),bo.getBookDescription(), 0);
                                         items.add(item);
                                         if(i >= end){
                                             break;
@@ -114,6 +113,7 @@ public class HomeFragment extends Fragment {
             }
         });
 
+
         return view;
     }
 
@@ -124,7 +124,7 @@ public class HomeFragment extends Fragment {
                 mbook = response.body();
                 int i = 0;
                 for (Book bo: mbook){
-                    Book item = new Book(bo.getId_book(),R.drawable.book1,bo.getBookName(),bo.getBookAuthor(),bo.getBookDescription(), 0);
+                    Book item = new Book(bo.getId_book(),bo.getBookImage(),bo.getBookName(),bo.getBookAuthor(),bo.getBookDescription(), 0);
                     items.add(item);
                     if(i >= 10){
                         i = 0;

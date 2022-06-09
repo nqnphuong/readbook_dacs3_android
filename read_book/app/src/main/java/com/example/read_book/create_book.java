@@ -124,7 +124,7 @@ public class create_book extends AppCompatActivity {
 //                    }
 //
 //                }
-                book.add(new Book(bo.getId_book(), bo.getBookName(), R.drawable.book1,  bo.getBookAuthor(), bo.getBookDescription(),"", num));
+                book.add(new Book(bo.getId_book(), bo.getBookName(), bo.getBookImage(),  bo.getBookAuthor(), bo.getBookDescription(),"", num));
                 num = 0;
             }
         }

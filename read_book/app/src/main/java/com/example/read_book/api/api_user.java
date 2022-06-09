@@ -10,6 +10,7 @@ import org.json.JSONObject;
 
 import java.util.List;
 
+import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.Retrofit;
@@ -50,7 +51,7 @@ public interface api_user {
             @Field("userCity") String userCity,
             @Field("userAge") int userAge,
             @Field("userDayofbirth") String userDayofbirth,
-            @Field("userImage1") String userImage1,
+            @Field("userImage1") String  userImage1,
             @Field("userImage2") String userImage2,
             @Field("userAndress") String userAndress,
             @Field("userPhone") String userPhone,
@@ -63,20 +64,16 @@ public interface api_user {
     );
 
 
+    @Multipart
     @PUT("/api/user/update/{id_user}")
-    @FormUrlEncoded
     Call<List<User>> update_user(
             @Path("id_user") int  id_user,
-            @Field("userEmail") String  userEmail,
-            @Field("userPassword") String  userPassword,
-            @Field("userFirstname") String  userFirstname,
-            @Field("userCity") String  userCity,
-            @Field("userAge") int  userAge,
-            @Field("userDayofbirth") String  userDayofbirth,
-            @Field("userImage1") String  userImage1,
-            @Field("userImage2") String  userImage2,
-            @Field("userAndress") String  userAndress,
-            @Field("userPhone") String  userPhone,
-            @Field("userDescription") String  userDescription);
+            @Part("userEmail") RequestBody  userEmail,
+            @Part("userPassword") RequestBody  userPassword,
+            @Part("userFirstname") RequestBody  userFirstname,
+            @Part("userDayofbirth") RequestBody  userDayofbirth,
+            @Part MultipartBody.Part userImage1,
+            @Part("userPhone") RequestBody  userPhone,
+            @Part("userDescription") RequestBody  userDescription);
 
 }

@@ -25,7 +25,7 @@
             android:id="@+id/txt_name_category_book_for_category"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/britanic"
+            android:textStyle="bold"
             android:text="Category"
             android:textColor="@android:color/black"
             android:textSize="40dp" />

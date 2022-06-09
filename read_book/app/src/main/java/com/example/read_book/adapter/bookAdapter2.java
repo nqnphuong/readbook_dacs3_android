@@ -16,6 +16,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.read_book.R;
 import com.example.read_book.detail_book_screen;
 import com.example.read_book.loadmore;
@@ -45,7 +46,7 @@ public class bookAdapter2 extends RecyclerView.Adapter<bookAdapter2.ItemViewHold
         bookAdapter2.ItemViewHolder2 viewHolder = (bookAdapter2.ItemViewHolder2) holder;
         viewHolder.txt_name_book.setText(book.get(position).getBookName());
         viewHolder.txt_author_book.setText(book.get(position).getBookAuthor());
-        viewHolder.img_book_book.setImageResource(book.get(position).getBookImage());
+        Glide.with(context).load(book.get(position).getBookImage()).into(viewHolder.img_book_book);
         viewHolder.layout_book_itembook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

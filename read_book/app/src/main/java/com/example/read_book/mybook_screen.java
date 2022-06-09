@@ -71,7 +71,7 @@ public class mybook_screen extends AppCompatActivity {
 
         for (Book bo : mbook){
             if (bo.getId_user() == id_user){
-                book.add(new Book(bo.getId_book(), R.drawable.book1, bo.getBookName(), bo.getBookAuthor(), bo.getBookDescription(), 0));
+                book.add(new Book(bo.getId_book(), bo.getBookImage(), bo.getBookName(), bo.getBookAuthor(), bo.getBookDescription(), 0));
             }
         }
 

@@ -2,6 +2,7 @@ package com.example.read_book.adapter;
 
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,10 +16,12 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.read_book.R;
 import com.example.read_book.detail_book_screen;
 import com.example.read_book.loadmore;
 import com.example.read_book.model.Book;
+import com.example.read_book.update_information_user_screen;
 
 import java.util.List;
 
@@ -37,10 +40,9 @@ public class bookAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     int visibleThreshold=5;
     int lastVisibleItem,totalItemCount;
 
-    public bookAdapter(RecyclerView recyclerView,Activity activity, List<Book> items) {
+    public bookAdapter(RecyclerView recyclerView, Activity activity, List<Book> items) {
         this.activity = activity;
         this.items = items;
-
         final LinearLayoutManager linearLayoutManager = (LinearLayoutManager)recyclerView.getLayoutManager();
         recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
@@ -90,9 +92,10 @@ public class bookAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         {
             Book item = items.get(position);
             ItemViewHolder viewHolder = (ItemViewHolder) holder;
+
             viewHolder.txt_name_book.setText(items.get(position).getBookName());
             viewHolder.txt_author_book.setText(items.get(position).getBookAuthor());
-            viewHolder.img_book_book.setImageResource(items.get(position).getBookImage());
+            Glide.with(activity).load(items.get(position).getBookImage()).into(viewHolder.img_book_book);
             viewHolder.layout_book_itembook.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -107,6 +110,7 @@ public class bookAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                     activity.startActivity(intent);
                 }
             });
+
         }
         else if(holder instanceof LoadingViewHolder)
         {

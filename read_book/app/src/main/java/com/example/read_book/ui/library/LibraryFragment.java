@@ -81,7 +81,7 @@ public class LibraryFragment extends Fragment {
     private List<Book> getListBook() {
         List<Book> book = new ArrayList<>();
         for (Book bo : mbook){
-            book.add(new Book(bo.getId_book(), R.drawable.book1, bo.getBookName(), bo.getBookAuthor(), bo.getBookDescription(), 0));
+            book.add(new Book(bo.getId_book(), bo.getBookImage(), bo.getBookName(), bo.getBookAuthor(), bo.getBookDescription(), 0));
         }
         return book;
     }

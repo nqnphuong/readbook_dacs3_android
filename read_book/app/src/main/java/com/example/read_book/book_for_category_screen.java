@@ -131,7 +131,7 @@ public class book_for_category_screen extends AppCompatActivity {
         for (Integer i : id_book){
             for (Book bo : mbook){
                 if (i == bo.getId_book()){
-                    book.add(new Book(bo.getId_book(), R.drawable.book1, bo.getBookName(), bo.getBookAuthor(), bo.getBookDescription(), i));
+                    book.add(new Book(bo.getId_book(), bo.getBookImage(), bo.getBookName(), bo.getBookAuthor(), bo.getBookDescription(), i));
                     break;
                 }
             }

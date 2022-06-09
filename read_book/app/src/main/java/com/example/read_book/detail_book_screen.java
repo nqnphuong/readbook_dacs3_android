@@ -24,12 +24,14 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.example.read_book.adapter.bookAdapter2;
 import com.example.read_book.api.api_book;
 import com.example.read_book.api.api_library;
 import com.example.read_book.model.Book;
 import com.example.read_book.model.Library;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -45,6 +47,7 @@ public class detail_book_screen extends AppCompatActivity {
     private LinearLayout layout_choose_chapter_detailbook;
     public static Integer id_book;
     private List<Book> mbook;
+    int id_library_delete = -1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,7 +83,7 @@ public class detail_book_screen extends AppCompatActivity {
         }
 
         Integer id_user = login_screen.id_user;
-        Integer bookImage= (Integer) bundle.get("bookImage");
+        String bookImage= (String) bundle.get("bookImage");
         String bookName= (String) bundle.get("bookName");
         String bookAuthor= (String) bundle.get("bookAuthor");
         id_book = (Integer) bundle.get("id_book");
@@ -88,8 +91,11 @@ public class detail_book_screen extends AppCompatActivity {
         txt_author_book.setText(bookAuthor);
         txt_description_detailbook.setText(bookDescription);
         txt_name_book.setText(bookName);
+        Glide.with(detail_book_screen.this).load(bookImage).into(img_book_book);
         System.out.println("id_book "+id_book);
         System.out.println("bookDescription "+bookDescription);
+
+
 
         layout_choose_chapter_detailbook = (LinearLayout) findViewById(R.id.layout_choose_chapter_detailbook);
         layout_choose_chapter_detailbook.setOnClickListener(new View.OnClickListener() {
@@ -101,38 +107,79 @@ public class detail_book_screen extends AppCompatActivity {
         });
 
         btn_addbook_detailbook = (Button) findViewById(R.id.btn_addbook_detailbook);
+        api_library.api_li.library_readByID_iduser(id_book, id_user).enqueue(new Callback<List<Library>>() {
+                    @Override
+                    public void onResponse(Call<List<Library>> call, Response<List<Library>> response) {
+                        if (response.body() != null){
+                            btn_addbook_detailbook.setText("-");
+                            for (Library li : response.body()){
+                                id_library_delete = li.getId_library();
+                            }
+                        } else {
+                            btn_addbook_detailbook.setText("+");
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Call<List<Library>> call, Throwable t) {
+                        System.out.println(t.toString());
+                    }
+                });
+
         btn_addbook_detailbook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                api_book.api_bo.read_your_library(id_user).enqueue(new Callback<List<Book>>() {
-                    @Override
-                    public void onResponse(Call<List<Book>> call, Response<List<Book>> response) {
-                        mbook = response.body();
-                        for (Book bo : mbook){
-                            if (bo.getId_book() == id_book){
-                                Toast.makeText(detail_book_screen.this, "Your library already has this book", Toast.LENGTH_SHORT).show();
-                                return;
+                if (id_library_delete == -1){
+                    api_book.api_bo.read_your_library(id_user).enqueue(new Callback<List<Book>>() {
+                        @Override
+                        public void onResponse(Call<List<Book>> call, Response<List<Book>> response) {
+                            mbook = response.body();
+                            for (Book bo : mbook){
+                                if (bo.getId_book() == id_book){
+                                    Toast.makeText(detail_book_screen.this, "Your library already has this book", Toast.LENGTH_SHORT).show();
+                                    return;
+                                }
                             }
+                            api_library.api_li.create_library(id_user, id_book).enqueue(new Callback<Library>() {
+                                @Override
+                                public void onResponse(Call<Library> call, Response<Library> response) {
+                                    response.body();
+                                    Toast.makeText(getApplicationContext(),"Add book into library successful" , Toast.LENGTH_SHORT).show();
+                                    btn_addbook_detailbook.setText("-");
+                                    finish();
+                                    startActivity(getIntent());
+                                }
+
+                                @Override
+                                public void onFailure(Call<Library> call, Throwable t) {
+                                    Toast.makeText(detail_book_screen.this, "Didn't add book", Toast.LENGTH_SHORT).show();
+                                }
+                            });
                         }
-                        api_library.api_li.create_library(id_user, id_book).enqueue(new Callback<Library>() {
-                            @Override
-                            public void onResponse(Call<Library> call, Response<Library> response) {
-                                response.body();
-                                Toast.makeText(getApplicationContext(),"Add book successful" , Toast.LENGTH_SHORT).show();
-                            }
 
-                            @Override
-                            public void onFailure(Call<Library> call, Throwable t) {
-                                Toast.makeText(detail_book_screen.this, "Didn't add book", Toast.LENGTH_SHORT).show();
-                            }
-                        });
-                    }
+                        @Override
+                        public void onFailure(Call<List<Book>> call, Throwable t) {
+                            System.out.println(t.toString());
+                        }
+                    });
+                } else {
+                    api_library.api_li.delete_library(id_library_delete)
+                            .enqueue(new Callback<ArrayList>() {
+                                @Override
+                                public void onResponse(Call<ArrayList> call, Response<ArrayList> response) {
+                                    Toast.makeText(getApplicationContext(),"Deleted this book from your library successfully" , Toast.LENGTH_SHORT).show();
+                                    btn_addbook_detailbook.setText("+");
+                                    finish();
+                                    startActivity(getIntent());
 
-                    @Override
-                    public void onFailure(Call<List<Book>> call, Throwable t) {
+                                }
 
-                    }
-                });
+                                @Override
+                                public void onFailure(Call<ArrayList> call, Throwable t) {
+                                    System.out.println(t.toString());
+                                }
+                            });
+                }
             }
         });
     }

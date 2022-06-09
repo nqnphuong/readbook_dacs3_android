@@ -19,6 +19,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.read_book.R;
 import com.example.read_book.adapter.bookAdapter;
 import com.example.read_book.adapter.bookAdapter2;
@@ -31,10 +32,12 @@ import com.example.read_book.model.Book;
 import com.example.read_book.model.Library;
 import com.example.read_book.model.User;
 import com.example.read_book.mybook_screen;
+import com.example.read_book.update_information_user_screen;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import de.hdodenhof.circleimageview.CircleImageView;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -47,6 +50,7 @@ public class MeFragment extends Fragment {
     private List<Book> mbook;
     private TextView txt_description_me, txt_email_me, txt_name_me;
     private LinearLayout layout_mybook_me;
+    private de.hdodenhof.circleimageview.CircleImageView img_avatar_me;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         MeViewModel meViewModel =
@@ -62,16 +66,16 @@ public class MeFragment extends Fragment {
         txt_description_me = (TextView) view.findViewById(R.id.txt_description_me);
         txt_email_me = (TextView) view.findViewById(R.id.txt_email_me);
         txt_name_me = (TextView) view.findViewById(R.id.txt_name_me);
-        api_user.api_us.show_all_user().enqueue(new Callback<List<User>>() {
+        img_avatar_me = (CircleImageView) view.findViewById(R.id.img_avatar_me);
+        api_user.api_us.user_readByID(id_user).enqueue(new Callback<List<User>>() {
             @Override
             public void onResponse(Call<List<User>> call, Response<List<User>> response) {
-                List<User> user = response.body();
-                for (User us: user){
-                    if (us.getId_user() == id_user){
-                        txt_description_me.setText(us.getUserDescription());
-                        txt_email_me.setText(us.getUserEmail());
-                        txt_name_me.setText(us.getUserFirstname());
-                    }
+                assert response.body() != null;
+                for (User us: response.body()){
+                    Glide.with(MeFragment.this).load(us.getUserImage1()).into(img_avatar_me);
+                    txt_description_me.setText(us.getUserDescription());
+                    txt_email_me.setText(us.getUserEmail());
+                    txt_name_me.setText(us.getUserFirstname());
                 }
             }
 
@@ -116,7 +120,7 @@ public class MeFragment extends Fragment {
         for (Book bo : mbook){
             if (bo.getId_user() == id_user){
                 i=i+1;
-                book.add(new Book(bo.getId_book(), R.drawable.book1, bo.getBookName(), bo.getBookAuthor(), bo.getBookDescription(), i));
+                book.add(new Book(bo.getId_book(), bo.getBookImage(), bo.getBookName(), bo.getBookAuthor(), bo.getBookDescription(), i));
             }
             if (i>=5) break;
         }

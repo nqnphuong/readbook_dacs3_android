@@ -26,12 +26,13 @@
             android:layout_marginRight="7dp"/>
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/britanic"
             android:text="Library"
             android:textColor="@android:color/black"
             android:textSize="40dp" />
+
 
     </LinearLayout>
     <androidx.recyclerview.widget.RecyclerView

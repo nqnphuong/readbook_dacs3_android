@@ -2,84 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fd30d6f-0545-46b7-85bb-379c19c4232f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/androidTest/java/com/example/ready/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/java/com/example/ready/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/java/com/example/ready/home_screen.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/java/com/example/ready/login_screen.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/java/com/example/ready/signup_screen.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/java/com/example/ready/ui/dashboard/DashboardFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/java/com/example/ready/ui/dashboard/DashboardViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/java/com/example/ready/ui/home/HomeFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/java/com/example/ready/ui/home/HomeViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/java/com/example/ready/ui/notifications/NotificationsFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/java/com/example/ready/ui/notifications/NotificationsViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/drawable-v24/button_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/drawable-v24/home_logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/drawable-v24/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/drawable/facebook_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/drawable/google_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/drawable/home_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/drawable/ic_home_black_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/drawable/ic_notifications_black_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/drawable/login_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/drawable/text_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/font/britanic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/layout/activity_home_screen.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/layout/activity_login_screen.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/layout/activity_signup_screen.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/layout/fragment_dashboard.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/layout/fragment_home.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/layout/fragment_notifications.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/menu/bottom_nav_menu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/navigation/mobile_navigation.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/values-night/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/values/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/main/res/values/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/app/src/test/java/com/example/ready/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ready/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../read_book/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/RealPathUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android_api_dacs3" beforeDir="false" afterPath="$PROJECT_DIR$/android_api_dacs3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android_api_dacs3/android_api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/android_api_dacs3/android_api/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android_api_dacs3/android_api/controllers/book.py" beforeDir="false" afterPath="$PROJECT_DIR$/android_api_dacs3/android_api/controllers/book.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android_api_dacs3/android_api/controllers/category_book.py" beforeDir="false" afterPath="$PROJECT_DIR$/android_api_dacs3/android_api/controllers/category_book.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android_api_dacs3/android_api/controllers/chapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/android_api_dacs3/android_api/controllers/chapter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android_api_dacs3/android_api/controllers/library.py" beforeDir="false" afterPath="$PROJECT_DIR$/android_api_dacs3/android_api/controllers/library.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android_api_dacs3/android_api/controllers/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/android_api_dacs3/android_api/controllers/user.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android_api_dacs3/android_api/views/book.py" beforeDir="false" afterPath="$PROJECT_DIR$/android_api_dacs3/android_api/views/book.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android_api_dacs3/android_api/views/category_book.py" beforeDir="false" afterPath="$PROJECT_DIR$/android_api_dacs3/android_api/views/category_book.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android_api_dacs3/android_api/views/chapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/android_api_dacs3/android_api/views/chapter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android_api_dacs3/android_api/views/library.py" beforeDir="false" afterPath="$PROJECT_DIR$/android_api_dacs3/android_api/views/library.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android_api_dacs3/android_api/views/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/android_api_dacs3/android_api/views/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android_api_dacs3/requirement.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android_api_dacs3/requirement.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android_api_dacs3/setting.py" beforeDir="false" afterPath="$PROJECT_DIR$/android_api_dacs3/setting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../read_book/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../read_book/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../read_book/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../read_book/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../read_book/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../read_book/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/adapter/bookAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/adapter/bookAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/adapter/bookAdapter2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/adapter/bookAdapter2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/adapter/bookAdapter_createbook.java" beforeDir="false" afterPath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/adapter/bookAdapter_createbook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/api/api_book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/api/api_book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/api/api_library.java" beforeDir="false" afterPath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/api/api_library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/api/api_user.java" beforeDir="false" afterPath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/api/api_user.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/book_for_category_screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/book_for_category_screen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/create_book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/create_book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/detail_book_screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/detail_book_screen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/detail_createbook.java" beforeDir="false" afterPath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/detail_createbook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/detail_createbook_screeen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/detail_createbook_screeen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/mybook_screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/mybook_screen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/setting.java" beforeDir="false" afterPath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/setting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/ui/home/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/ui/home/HomeFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/ui/library/LibraryFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/ui/library/LibraryFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/ui/me/MeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/ui/me/MeFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/update_information_user_screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../read_book/app/src/main/java/com/example/read_book/update_information_user_screen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../read_book/app/src/main/res/layout/activity_book_for_category_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../read_book/app/src/main/res/layout/activity_book_for_category_screen.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../read_book/app/src/main/res/layout/fragment_library.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../read_book/app/src/main/res/layout/fragment_library.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../read_book/app/src/main/res/layout/fragment_me.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../read_book/app/src/main/res/layout/fragment_me.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../read_book/app/src/main/res/layout/item_book_createbook.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../read_book/app/src/main/res/layout/item_book_createbook.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../read_book/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../read_book/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,16 +73,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Acer/AndroidStudioProjects/DACS/GIT/readbook_dacs3_android/backend_android",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Acer/AndroidStudioProjects/DACS/GIT/readbook_dacs3_android/backend_android/android_api_dacs3/android_api/img&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Acer\AndroidStudioProjects\DACS\GIT\readbook_dacs3_android\backend_android\android_api_dacs3\android_api\img" />
       <recent name="C:\Users\Acer\PycharmProjects\Rest-api\backend_android\android_api_dacs3\android_api" />
     </key>
   </component>

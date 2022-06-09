@@ -16,6 +16,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.read_book.R;
 import com.example.read_book.detail_book_screen;
 import com.example.read_book.detail_createbook;
@@ -48,7 +49,7 @@ public class bookAdapter_createbook extends RecyclerView.Adapter<bookAdapter_cre
         viewHolder.txt_author_book.setText(book.get(position).getBookAuthor());
         Integer numchapter = book.get(position).getBookNumbook();
         viewHolder.txt_numchapter.setText(numchapter.toString());
-        viewHolder.img_book_book.setImageResource(book.get(position).getBookImage());
+        Glide.with(context).load(book.get(position).getBookImage()).into(viewHolder.img_book_book);
         viewHolder.layout_book_itembook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

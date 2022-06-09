@@ -63,13 +63,6 @@
                         android:layout_marginBottom="20dp"
                         android:orientation="horizontal">
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@"
-                            android:textSize="18dp"
-                            android:layout_marginRight="5dp"
-                            android:textStyle="bold"/>
-                        <TextView
                             android:id="@+id/txt_email_me"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"

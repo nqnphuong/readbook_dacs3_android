@@ -59,6 +59,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
+                android:textColor="@color/white"
                 android:text="7"
                 android:textSize="12dp"/>
 
@@ -66,6 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
+                android:textColor="@color/white"
                 android:text=" chapter"
                 android:textSize="12dp"/>
         </LinearLayout>

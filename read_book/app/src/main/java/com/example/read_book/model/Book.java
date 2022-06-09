@@ -3,12 +3,12 @@ package com.example.read_book.model;
 import java.util.List;
 
 public class Book {
-    private int id_book, bookImage, id_category, id_user;
-    private String bookName, bookAuthor, bookDescription, bookStatus, bookNumberLove;
+    private int id_book, id_category, id_user;
+    private String bookName, bookImage, bookAuthor, bookDescription, bookStatus, bookNumberLove;
     private int bookNumbook;
 
 
-    public Book(int id_book, String bookName, int bookImage, String bookAuthor, String bookDescription, String bookStatus, int bookNumbook) {
+    public Book(int id_book, String bookName, String bookImage, String bookAuthor, String bookDescription, String bookStatus, int bookNumbook) {
         this.id_book = id_book;
         this.bookName = bookName;
         this.bookImage = bookImage;
@@ -18,14 +18,14 @@ public class Book {
         this.bookNumbook = bookNumbook;
     }
 
-    public Book(int bookImage, String bookName, String bookAuthor, int id_category) {
+    public Book(String bookImage, String bookName, String bookAuthor, int id_category) {
         this.bookImage = bookImage;
         this.bookName = bookName;
         this.bookAuthor = bookAuthor;
         this.id_category = id_category;
     }
 
-    public Book(int id_book, int bookImage, String bookName, String bookAuthor, String bookDescription, int id_category) {
+    public Book(int id_book, String bookImage, String bookName, String bookAuthor, String bookDescription, int id_category) {
         this.id_book = id_book;
         this.bookImage = bookImage;
         this.bookName = bookName;
@@ -34,7 +34,7 @@ public class Book {
         this.id_category = id_category;
     }
 
-    public Book(int id_book, int bookImage, int id_user, String bookName,  String bookAuthor) {
+    public Book(int id_book, String bookImage, int id_user, String bookName,  String bookAuthor) {
         this.id_book = id_book;
         this.bookImage = bookImage;
         this.id_user = id_user;
@@ -74,11 +74,11 @@ public class Book {
         this.bookName = bookName;
     }
 
-    public int getBookImage() {
+    public String getBookImage() {
         return bookImage;
     }
 
-    public void setBookImage(int bookImage) {
+    public void setBookImage(String bookImage) {
         this.bookImage = bookImage;
     }
 
