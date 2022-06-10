@@ -1,0 +1,8 @@
+flask==2.1.2
+passlib
+psycopg2
+flask-cors
+flask_sqlalchemy
+flask_migrate
+flask-restplus
+cloudinary

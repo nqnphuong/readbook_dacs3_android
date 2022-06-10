@@ -1,0 +1,14 @@
+FROM python:3.8
+
+RUN which python
+RUN python --version
+
+WORKDIR /app
+ADD . .
+
+ENV PYTHONPATH=/app:/app
+EXPOSE 5000
+
+RUN pip install -r requirement.txt
+
+CMD [ "python","app.py" ]
