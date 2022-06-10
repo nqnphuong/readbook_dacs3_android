@@ -3,7 +3,7 @@ from flask import Flask
 import os
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
-from android_api_dacs3 import setting
+import setting
 
 db = SQLAlchemy()
 
@@ -36,14 +36,14 @@ def create_app():
     from .models import User, Category, Book, Chapter, ImageOfChapter, Category_Book, Library, Comment
     create_database(app)
 
-    from android_api_dacs3.android_api.views.user import user
-    from android_api_dacs3.android_api.views.category import category
-    from android_api_dacs3.android_api.views.book import book
-    from android_api_dacs3.android_api.views.chapter import chapter
-    from android_api_dacs3.android_api.views.category_book import category_book
-    from android_api_dacs3.android_api.views.library import library
-    from android_api_dacs3.android_api.views.imageOfChapter import imageOfChapter
-    from android_api_dacs3.android_api.views.comment import comment
+    from android_api.views.user import user
+    from android_api.views.category import category
+    from android_api.views.book import book
+    from android_api.views.chapter import chapter
+    from android_api.views.category_book import category_book
+    from android_api.views.library import library
+    from android_api.views.imageOfChapter import imageOfChapter
+    from android_api.views.comment import comment
 
     app.register_blueprint(user)
     app.register_blueprint(category)

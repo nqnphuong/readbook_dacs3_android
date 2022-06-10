@@ -1,5 +1,5 @@
 from flask import request, jsonify
-from android_api_dacs3.android_api.controllers.comment import create_comment,show_by_id_comment,show_all_comment,delete_comment,update_comment
+from android_api.controllers.comment import create_comment,show_by_id_comment,show_all_comment,delete_comment,update_comment
 from flask_cors import cross_origin
 from flask import Blueprint
 

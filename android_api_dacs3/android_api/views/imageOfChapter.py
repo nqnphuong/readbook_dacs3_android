@@ -1,5 +1,5 @@
 from flask import request, jsonify
-from android_api_dacs3.android_api.controllers.imgaeOfChapter import create_imageOfChapter, show_by_id_imageOfChapter,delete_imageOfChapter,update_imageOfChapter,show_all_imageOfChapter
+from android_api.controllers.imgaeOfChapter import create_imageOfChapter, show_by_id_imageOfChapter,delete_imageOfChapter,update_imageOfChapter,show_all_imageOfChapter
 from flask_cors import cross_origin
 from flask import Blueprint
 

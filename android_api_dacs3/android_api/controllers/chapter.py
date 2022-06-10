@@ -1,5 +1,5 @@
-from android_api_dacs3.android_api.models import Chapter
-from android_api_dacs3.android_api import db
+from android_api.models import Chapter
+from android_api import db
 
 
 def create_chapter(id_book, chapterContent, chapterNumberLove, chapterTitle):

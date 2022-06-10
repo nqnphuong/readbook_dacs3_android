@@ -1,7 +1,7 @@
 import cloudinary.uploader
 
-from android_api_dacs3.android_api.models import User
-from android_api_dacs3.android_api import db
+from android_api.models import User
+from android_api import db
 
 
 def create_user(userEmail, userPassword, userFirstname, userCity, userAge, userDayofbirth, userImage1, userImage2, userAndress,

@@ -1,5 +1,5 @@
 from flask import request, jsonify
-from android_api_dacs3.android_api.controllers.category import create_category, show_by_id_category, show_all_category,delete_category,update_category
+from android_api.controllers.category import create_category, show_by_id_category, show_all_category,delete_category,update_category
 from flask_cors import cross_origin
 from flask import Blueprint
 

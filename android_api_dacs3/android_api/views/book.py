@@ -1,11 +1,11 @@
 
 import cloudinary.uploader
 from flask import request, jsonify
-from android_api_dacs3.android_api.controllers.book import show_by_id_book, show_all_book, create_book, delete_book, \
+from android_api.controllers.book import show_by_id_book, show_all_book, create_book, delete_book, \
     update_book, category_book_show, read_your_library
 from flask_cors import cross_origin
 from flask import Blueprint
-from android_api_dacs3.android_api import create_app
+from android_api import create_app
 
 book = Blueprint("book", __name__)
 app = create_app()

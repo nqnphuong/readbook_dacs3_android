@@ -1,7 +1,7 @@
 import cloudinary.uploader
 
-from android_api_dacs3.android_api.models import Book, User, Category_Book, Category, Library
-from android_api_dacs3.android_api import db
+from android_api.models import Book, User, Category_Book, Category, Library
+from android_api import db
 
 
 def create_book(bookName, bookImage, bookAuthor, bookDescription):

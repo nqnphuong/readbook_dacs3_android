@@ -1,5 +1,5 @@
-from android_api_dacs3.android_api.models import Comment
-from android_api_dacs3.android_api import db
+from android_api.models import Comment
+from android_api import db
 
 
 def create_comment(id_user, id_book, comment):

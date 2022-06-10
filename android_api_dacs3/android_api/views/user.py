@@ -3,11 +3,11 @@ import uuid
 
 import cloudinary.uploader
 from flask import request, jsonify
-from android_api_dacs3.android_api.controllers.user import login, create_user, show_all_user, show_by_id_user, delete_user, update_user
+from android_api.controllers.user import login, create_user, show_all_user, show_by_id_user, delete_user, update_user
 from flask_cors import cross_origin
 from flask import Blueprint
 from werkzeug.utils import secure_filename
-from android_api_dacs3.android_api import create_app
+from android_api import create_app
 
 
 user = Blueprint("user", __name__)
